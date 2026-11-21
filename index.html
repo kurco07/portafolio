@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro · Portafolio</title>
+  <meta name="description" content="Portafolio de Pedro: sistemas web para negocios reales.">
+  <style>
+    :root {
+      --bg: #fafaf9; --card: #ffffff; --text: #1c1917; --muted: #78716c;
+      --border: #e7e5e4; --accent: #ea580c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0c0a09; --card: #1c1917; --text: #fafaf9; --muted: #a8a29e; --border: #292524; --accent: #fb923c; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 64px 16px; }
+    h1 { font-size: 2rem; margin: 0 0 4px; }
+    .sub { color: var(--muted); margin: 0 0 20px; }
+    a { color: var(--accent); }
+    .github {
+      display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+      color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px;
+    }
+    .github:hover { border-color: var(--accent); }
+    h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 48px 0 16px; }
+    .card {
+      display: block; text-decoration: none; color: inherit; background: var(--card);
+      border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 16px;
+      transition: border-color .15s, transform .15s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card h3 { margin: 0 0 6px; font-size: 1.2rem; }
+    .card p { margin: 0 0 12px; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .tags span { font-size: .75rem; border: 1px solid var(--border); border-radius: 999px; padding: 2px 10px; color: var(--muted); }
+    .go { color: var(--accent); font-weight: 600; }
+    footer { margin-top: 48px; color: var(--muted); font-size: .875rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Pedro</h1>
+    <p class="sub">Desarrollador web. Construyo sistemas completos para negocios reales.</p>
+    <a class="github" href="https://github.com/kurco07" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      github.com/kurco07
+    </a>
+
+    <h2>Proyectos</h2>
+
+    <a class="card" href="URL_RESTAURANTE" target="_blank" rel="noopener">
+      <h3>Plataforma de Restaurantes</h3>
+      <p>SaaS multi-restaurante: toma de pedidos por mesonero y por QR en la mesa, cocina en tiempo real, inventario por receta, gerencia con reportes. Funciona sin internet.</p>
+      <div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span><span>PowerSync</span><span>PWA</span></div>
+      <span class="go">Ver demo → (botones de acceso rápido por rol en el login)</span>
+    </a>
+
+    <a class="card" href="URL_SURTIDORA" target="_blank" rel="noopener">
+      <h3>Surtidora Yocoima</h3>
+      <p>Sistema para distribuidora: punto de venta, caja, inventario por lotes, compras, proveedores, pedidos con despacho y tienda online para clientes.</p>
+      <div class="tags"><span>Next.js</span><span>React</span><span>Django</span><span>PostgreSQL</span></div>
+      <span class="go">Ver interfaz → (demo con datos próximamente)</span>
+    </a>
+
+    <footer>© 2026 Pedro</footer>
+  </main>
+</body>
+</html>
